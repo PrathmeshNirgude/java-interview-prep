@@ -1,0 +1,16 @@
+import java.util.PriorityQueue;
+
+public class PriorityQueueDemo {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.add(50);
+        pq.add(10);
+        pq.add(30);
+
+        System.out.println("Processing elements based on priority:");
+        while (!pq.isEmpty()) {
+            System.out.println("Removing: " + pq.poll());
+        }
+    }
+}
